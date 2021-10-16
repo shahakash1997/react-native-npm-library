@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-import { StyleSheet, View, Text } from 'react-native';
+import { StyleSheet, View, Text, Button } from 'react-native';
 import NpmLibrary from 'react-native-npm-library';
 
 export default function App() {
@@ -13,6 +13,9 @@ export default function App() {
   return (
     <View style={styles.container}>
       <Text>Result: {result}</Text>
+      <Button
+        title="Show Toast"
+        onPress={() => NpmLibrary.showToast("Hi This is a Native Toast!")} />
     </View>
   );
 }
