@@ -15,7 +15,8 @@ export default function App() {
       <Text>Result: {result}</Text>
       <Button
         title="Show Toast"
-        onPress={() => NpmLibrary.showToast("Hi This is a Native Toast!")} />
+        onPress={() => NpmLibrary.showToast('Hi This is a Native Toast!')}
+      />
     </View>
   );
 }
