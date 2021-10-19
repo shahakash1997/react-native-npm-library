@@ -1,5 +1,5 @@
 import { NativeModules } from 'react-native';
-import {DateTime} from './DateTime';
+import { DateTime } from './DateTime';
 
 type NpmLibraryType = {
   multiply(a: number, b: number): Promise<number>;
