@@ -1,7 +1,7 @@
 import * as React from 'react';
 
 import { StyleSheet, View, Text, Button } from 'react-native';
-import NpmLibrary from 'react-native-npm-library';
+import NpmLibrary, { DateTime } from 'react-native-npm-library';
 
 export default function App() {
   const [result, setResult] = React.useState<number | undefined>();
@@ -17,6 +17,7 @@ export default function App() {
         title="Show Toast"
         onPress={() => NpmLibrary.showToast('Hi This is a Native Toast!')}
       />
+      <DateTime />
     </View>
   );
 }
